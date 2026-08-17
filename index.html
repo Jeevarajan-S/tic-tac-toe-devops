@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tic Tac Toe</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+    <h1 class="title">Tic <span>Tac</span> Toe</h1>
+
+    <div class="mode-select">
+      <button class="mode-btn active" data-mode="pvp">Player vs Player</button>
+      <button class="mode-btn" data-mode="pvc">Player vs Computer</button>
+    </div>
+
+    <div class="difficulty-wrap" id="difficultyWrap">
+      <label for="difficulty">Difficulty</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard" selected>Unbeatable</option>
+      </select>
+    </div>
+
+    <div class="scoreboard">
+      <div class="score-card" id="scoreXCard">
+        <span class="score-label" id="labelX">Player X</span>
+        <span class="score-value" id="scoreX">0</span>
+      </div>
+      <div class="score-card draw">
+        <span class="score-label">Draws</span>
+        <span class="score-value" id="scoreDraw">0</span>
+      </div>
+      <div class="score-card" id="scoreOCard">
+        <span class="score-label" id="labelO">Player O</span>
+        <span class="score-value" id="scoreO">0</span>
+      </div>
+    </div>
+
+    <div class="status" id="status">Player X's turn</div>
+
+    <div class="board" id="board">
+      <button class="cell" data-index="0"></button>
+      <button class="cell" data-index="1"></button>
+      <button class="cell" data-index="2"></button>
+      <button class="cell" data-index="3"></button>
+      <button class="cell" data-index="4"></button>
+      <button class="cell" data-index="5"></button>
+      <button class="cell" data-index="6"></button>
+      <button class="cell" data-index="7"></button>
+      <button class="cell" data-index="8"></button>
+    </div>
+
+    <div class="controls">
+      <button class="btn restart" id="restartBtn">Restart Round</button>
+      <button class="btn reset" id="resetScoreBtn">Reset Scores</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
